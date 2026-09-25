@@ -1,0 +1,328 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||fonts.googleapis.com^"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||fonts.gstatic.com^"
+    }
+  },
+  {
+    "id": 3,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||ajax.googleapis.com^"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdn.jsdelivr.net^"
+    }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||cdnjs.cloudflare.com^"
+    }
+  },
+  {
+    "id": 6,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||unpkg.com^"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||accounts.google.com^"
+    }
+  },
+  {
+    "id": 8,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||apis.google.com^"
+    }
+  },
+  {
+    "id": 9,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||maps.googleapis.com^"
+    }
+  },
+  {
+    "id": 10,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||maps.gstatic.com^"
+    }
+  },
+  {
+    "id": 11,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.gstatic.com/recaptcha^"
+    }
+  },
+  {
+    "id": 12,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.google.com/recaptcha^"
+    }
+  },
+  {
+    "id": 13,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||js.stripe.com^"
+    }
+  },
+  {
+    "id": 14,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||checkout.stripe.com^"
+    }
+  },
+  {
+    "id": 15,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.paypalobjects.com^"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.paypal.com^"
+    }
+  },
+  {
+    "id": 17,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||player.vimeo.com^"
+    }
+  },
+  {
+    "id": 18,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||s.ytimg.com^"
+    }
+  },
+  {
+    "id": 19,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||i.ytimg.com^"
+    }
+  },
+  {
+    "id": 20,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||www.youtube.com^",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||youtubei.googleapis.com^"
+    }
+  },
+  {
+    "id": 22,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||raw.githubusercontent.com^"
+    }
+  },
+  {
+    "id": 23,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||github.githubassets.com^"
+    }
+  },
+  {
+    "id": 24,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||avatars.githubusercontent.com^"
+    }
+  },
+  {
+    "id": 25,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||login.microsoftonline.com^"
+    }
+  },
+  {
+    "id": 26,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||outlook.office365.com^"
+    }
+  },
+  {
+    "id": 27,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||teams.microsoft.com^"
+    }
+  },
+  {
+    "id": 28,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||zoom.us^"
+    }
+  },
+  {
+    "id": 29,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||static.zoom.us^"
+    }
+  },
+  {
+    "id": 30,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||slack.com^"
+    }
+  },
+  {
+    "id": 31,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||googlevideo.com^"
+    }
+  },
+  {
+    "id": 32,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com^",
+      "initiatorDomains": [
+        "youtube.com"
+      ]
+    }
+  }
+]

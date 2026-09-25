@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Super AD Blocker — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <img class="logo" src="icons/logo.png" alt="Super AD Blocker" />
+      <div>
+        <h1>Settings</h1>
+        <p class="version" id="versionLabel"></p>
+      </div>
+    </div>
+
+    <!-- Master switch -->
+    <section class="card master-card">
+      <div class="row">
+        <div>
+          <h2>Blocking is on</h2>
+          <p class="hint" id="masterHint">Ads, trackers and cookie pop-ups are being blocked on every site.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="masterToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="card">
+      <h2 class="section-title">Stats</h2>
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-number" id="blockedCount">0</div>
+          <div class="stat-label">ads &amp; trackers blocked</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" id="disabledCount">0</div>
+          <div class="stat-label">sites with blocking off</div>
+        </div>
+      </div>
+      <button id="resetBtn" class="btn btn-secondary">Reset counter</button>
+    </section>
+
+    <!-- Filtering options -->
+    <section class="card">
+      <h2 class="section-title">Filtering options</h2>
+
+      <div class="row option-row">
+        <div>
+          <p class="option-title">Hide cookie-consent banners</p>
+          <p class="hint">Removes cookie/GDPR pop-ups and overlays automatically.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="cookieToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row option-row">
+        <div>
+          <p class="option-title">Focus mode</p>
+          <p class="hint">Hides pop-up banners/overlays and stops videos from autoplaying, so pages open straight to the content.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="focusToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row option-row">
+        <div>
+          <p class="option-title">Block trackers</p>
+          <p class="hint">Block trackers and prevent advertisers from following you across the web.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="trackerToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row option-row">
+        <div>
+          <p class="option-title">Browse Faster</p>
+          <p class="hint">Speed up page loading and reduce resource usage for a smoother browsing experience.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="speedToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="rulesets">
+        <p class="option-title">Active filter lists</p>
+        <ul class="ruleset-list">
+          <li><span class="dot"></span>Custom curated rules</li>
+          <li><span class="dot"></span>EasyList / EasyPrivacy</li>
+          <li><span class="dot"></span>HaGeZi threat &amp; ad domains</li>
+          <li><span class="dot"></span>Cookie-consent &amp; annoyance list</li>
+          <li><span class="dot"></span>Performance list (chat widgets &amp; session recorders)</li>
+          <li><span class="dot"></span>Cross-site tracker &amp; ad-pixel list</li>
+          <li><span class="dot"></span>Allowlist (protects sites that break)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Site exceptions -->
+    <section class="card">
+      <h2 class="section-title">Site exceptions</h2>
+      <p class="hint">Blocking is turned off on these sites. Remove one to re-enable blocking there, or add a site below.</p>
+
+      <ul id="disabledList" class="site-list"></ul>
+      <p id="emptyMsg" class="hint" hidden>No sites are disabled right now.</p>
+
+      <div class="add-site-row">
+        <input type="text" id="addSiteInput" class="text-input" placeholder="example.com" />
+        <button id="addSiteBtn" class="btn btn-secondary">Add</button>
+      </div>
+    </section>
+
+    <!-- Data management -->
+    <section class="card">
+      <h2 class="section-title">Data</h2>
+      <p class="hint">Back up your settings and exceptions, or restore them on another computer.</p>
+      <div class="data-actions">
+        <button id="exportBtn" class="btn btn-secondary">Export settings</button>
+        <button id="importBtn" class="btn btn-secondary">Import settings</button>
+        <input type="file" id="importFile" accept="application/json" hidden />
+      </div>
+      <button id="clearAllBtn" class="btn btn-danger">Clear all data</button>
+      <p id="dataMsg" class="hint data-msg" hidden></p>
+    </section>
+
+    <!-- About / Copyright -->
+    <section class="card about-card">
+      <h2 class="section-title">About</h2>
+      <p class="hint about-name">Super AD Blocker <span id="aboutVersion"></span></p>
+      <p class="hint">Support / Bug Report: <a class="about-link" href="mailto:devteam.official@myyahoo.com">devteam.official@myyahoo.com</a></p>
+      <p class="hint about-github">
+        <a class="about-link github-link" href="https://github.com/arunkumarjust97-arch/Super-Blocker" target="_blank" rel="noopener" title="View on GitHub" aria-label="View on GitHub">
+          <img class="github-icon" src="icons/github.png" width="45" height="45" alt="GitHub" />
+        </a>
+      </p>
+      <p class="hint copyright" id="copyrightLine">© 2026 Arun Kumar. All rights reserved.</p>
+    </section>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

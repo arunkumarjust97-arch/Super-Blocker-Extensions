@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Super AD Blocker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+    <button class="settings-btn" id="settingsBtn" title="Settings" aria-label="Settings">⚙</button>
+
+    <div class="popup-header">
+      <img class="popup-logo" src="icons/logo.png" alt="Super AD Blocker" />
+      <span class="popup-name">Super AD Blocker</span>
+    </div>
+
+    <div class="site-row">
+      <span id="siteName">this site</span>
+      <label class="switch">
+        <input type="checkbox" id="siteToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <p id="siteStatus" class="status-text"></p>
+
+    <div class="stats">
+      <div class="stat-number" id="blockedCount">0</div>
+      <div class="stat-label">ads &amp; trackers blocked</div>
+    </div>
+
+    <p class="footer">Toggling reloads the page automatically.</p>
+
+    <div class="cookie-row">
+      <span>Hide cookie alerts</span>
+      <label class="switch">
+        <input type="checkbox" id="cookieToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
